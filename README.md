@@ -886,7 +886,7 @@
             <div class="about-image">
                 <div class="about-image-wrapper">
                     <!-- Your personal photo -->
-                    <img src="/mnt/kimi/upload/微信图片_20260202212203_263_2(1).jpg" alt="Allen Jeong">
+                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/a9e0566eecddfa632a3e6c0fca3f46ef19ef9955/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260202212203_263_2.jpg" alt="Allen Jeong">
                 </div>
             </div>
             <div class="about-content">
@@ -956,7 +956,7 @@
             <div class="project-card reveal">
                 <div class="project-image-container">
                     <!-- First project screenshot -->
-                    <img src="/mnt/kimi/upload/009e55b4e7c23a9e314fae8152dd4e1c(1).jpg" alt="AI Text Enhancement Suite">
+                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/b59dff78498f8b0e87d7600ad1d5ca737984b6db/009e55b4e7c23a9e314fae8152dd4e1c.jpg" alt="AI Text Enhancement Suite">
                     
                     <div class="project-image-overlay">
                         <div class="project-tech-stack">
@@ -991,7 +991,7 @@
             <div class="project-card reveal">
                 <div class="project-image-container">
                     <!-- Second project screenshot -->
-                    <img src="/mnt/kimi/upload/mit1.jpg" alt="AI Translation App">
+                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/b59dff78498f8b0e87d7600ad1d5ca737984b6db/mit1.jpg" alt="AI Translation App">
                     
                     <div class="project-image-overlay">
                         <div class="project-tech-stack">
