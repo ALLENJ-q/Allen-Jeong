@@ -918,7 +918,7 @@
             <div class="about-image">
                 <div class="about-image-wrapper">
                     <!-- REPLACE WITH YOUR PHOTO: Add your image to /mnt/kimi/upload/ folder and update src -->
-                    <img src="https://via.placeholder.com/600x800/6366f1/ffffff?text=Your+Photo+Here" alt="Allen Jeong">
+                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/1617ddbbe2ea99500a05fa07194573913acb90e0/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260202212203_263_2.jpg" alt="Allen Jeong">
                 </div>
             </div>
             <div class="about-content">
@@ -989,7 +989,7 @@
                 <div class="project-image-container">
                     <!-- REPLACE WITH YOUR PROJECT SCREENSHOT -->
                     <!-- Option 1: Use an image URL -->
-                    <!-- <img src="https://your-image-url.com/screenshot1.png" alt="Text Enhancement Suite"> -->
+                    <!-- <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/1617ddbbe2ea99500a05fa07194573913acb90e0/009e55b4e7c23a9e314fae8152dd4e1c.jpg" alt="Text Enhancement Suite"> -->
                     
                     <!-- Option 2: Placeholder showing where to add image -->
                     <div class="image-placeholder">
