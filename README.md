@@ -348,45 +348,14 @@
             margin: 0 auto;
         }
 
-        /* About Section */
+        /* About Section - Text Only */
         .about-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-image {
-            position: relative;
-        }
-
-        .about-image-wrapper {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-
-        .about-image-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: -10px;
-            background: var(--gradient-1);
-            border-radius: 25px;
-            z-index: -1;
-            opacity: 0.5;
-            filter: blur(20px);
-        }
-
-        .about-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-
-        .about-image-wrapper:hover img {
-            transform: scale(1.05);
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .about-content h3 {
@@ -545,21 +514,23 @@
             box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.2);
         }
 
-        .project-image-container {
+        .project-image-link {
+            display: block;
             position: relative;
             height: 240px;
             overflow: hidden;
             background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+            cursor: zoom-in;
         }
 
-        .project-image-container img {
+        .project-image-link img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
 
-        .project-card:hover .project-image-container img {
+        .project-card:hover .project-image-link img {
             transform: scale(1.1);
         }
 
@@ -592,6 +563,27 @@
             font-size: 0.75rem;
             color: white;
             font-weight: 500;
+        }
+
+        .click-hint {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .project-image-link:hover .click-hint {
+            opacity: 1;
         }
 
         .project-content {
@@ -795,11 +787,6 @@
                 font-size: 2.5rem;
             }
 
-            .about-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
             .stats {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -883,12 +870,6 @@
             <p class="section-subtitle">Bridging technology and language to create meaningful impact</p>
         </div>
         <div class="about-container reveal">
-            <div class="about-image">
-                <div class="about-image-wrapper">
-                    <!-- Your personal photo -->
-                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/a9e0566eecddfa632a3e6c0fca3f46ef19ef9955/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260202212203_263_2.jpg" alt="Allen Jeong">
-                </div>
-            </div>
             <div class="about-content">
                 <h3>Hello, I'm Allen Jeong</h3>
                 <p>A Korea-born Chinese AI enthusiast with hands-on experience in Python development. I specialize in building practical AI-powered applications that enhance daily productivity and bridge communication gaps.</p>
@@ -949,15 +930,14 @@
         <div class="section-header reveal">
             <span class="section-tag">Portfolio</span>
             <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Real-world applications solving complex problems</p>
+            <p class="section-subtitle">Click on images to view full size</p>
         </div>
         <div class="projects-grid">
             <!-- Project 1: AI Text Enhancement Suite -->
             <div class="project-card reveal">
-                <div class="project-image-container">
-                    <!-- First project screenshot -->
-                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/b59dff78498f8b0e87d7600ad1d5ca737984b6db/009e55b4e7c23a9e314fae8152dd4e1c.jpg" alt="AI Text Enhancement Suite">
-                    
+                <a href="/mnt/kimi/upload/009e55b4e7c23a9e314fae8152dd4e1c(1).jpg" target="_blank" class="project-image-link" title="Click to view full image">
+                    <img src="/mnt/kimi/upload/009e55b4e7c23a9e314fae8152dd4e1c(1).jpg" alt="AI Text Enhancement Suite">
+                    <div class="click-hint">🔍 Click to enlarge</div>
                     <div class="project-image-overlay">
                         <div class="project-tech-stack">
                             <span class="tech-tag">Python</span>
@@ -965,7 +945,7 @@
                             <span class="tech-tag">Flask</span>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="project-content">
                     <h3>AI-Powered Text Enhancement Suite</h3>
                     <div class="project-section">
@@ -989,10 +969,9 @@
 
             <!-- Project 2: Translation App -->
             <div class="project-card reveal">
-                <div class="project-image-container">
-                    <!-- Second project screenshot -->
-                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/b59dff78498f8b0e87d7600ad1d5ca737984b6db/mit1.jpg" alt="AI Translation App">
-                    
+                <a href="/mnt/kimi/upload/mit1.jpg" target="_blank" class="project-image-link" title="Click to view full image">
+                    <img src="/mnt/kimi/upload/mit1.jpg" alt="AI Translation App">
+                    <div class="click-hint">🔍 Click to enlarge</div>
                     <div class="project-image-overlay">
                         <div class="project-tech-stack">
                             <span class="tech-tag">React</span>
@@ -1000,7 +979,7 @@
                             <span class="tech-tag">i18n</span>
                         </div>
                     </div>
-                </div>
+                </a>
                 <div class="project-content">
                     <h3>AI-Driven Multilingual Translation App</h3>
                     <div class="project-section">
