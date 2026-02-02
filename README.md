@@ -918,7 +918,7 @@
             <div class="about-image">
                 <div class="about-image-wrapper">
                     <!-- REPLACE WITH YOUR PHOTO: Add your image to /mnt/kimi/upload/ folder and update src -->
-                    <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/1617ddbbe2ea99500a05fa07194573913acb90e0/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260202212203_263_2.jpg" alt="Allen Jeong">
+                    ![image alt](https://github.com/ALLENJ-q/Allen-Jeong/blob/a9e0566eecddfa632a3e6c0fca3f46ef19ef9955/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260202212203_263_2.jpg)
                 </div>
             </div>
             <div class="about-content">
