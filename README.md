@@ -636,38 +636,6 @@
             font-size: 0.9rem;
         }
 
-        /* Image Upload Placeholder Styles */
-        .image-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-            gap: 1rem;
-            background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
-        }
-
-        .image-placeholder-icon {
-            width: 60px;
-            height: 60px;
-            border: 3px dashed var(--primary);
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            opacity: 0.5;
-        }
-
-        .image-placeholder-text {
-            font-size: 0.9rem;
-            opacity: 0.7;
-            text-align: center;
-            padding: 0 1rem;
-        }
-
         /* Contact Section */
         .contact {
             background: white;
@@ -917,8 +885,8 @@
         <div class="about-container reveal">
             <div class="about-image">
                 <div class="about-image-wrapper">
-                    <!-- REPLACE WITH YOUR PHOTO: Add your image to /mnt/kimi/upload/ folder and update src -->
-                    ![image alt](https://github.com/ALLENJ-q/Allen-Jeong/blob/a9e0566eecddfa632a3e6c0fca3f46ef19ef9955/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260202212203_263_2.jpg)
+                    <!-- Your personal photo -->
+                    <img src="/mnt/kimi/upload/微信图片_20260202212203_263_2(1).jpg" alt="Allen Jeong">
                 </div>
             </div>
             <div class="about-content">
@@ -984,21 +952,11 @@
             <p class="section-subtitle">Real-world applications solving complex problems</p>
         </div>
         <div class="projects-grid">
-            <!-- Project 1 -->
+            <!-- Project 1: AI Text Enhancement Suite -->
             <div class="project-card reveal">
                 <div class="project-image-container">
-                    <!-- REPLACE WITH YOUR PROJECT SCREENSHOT -->
-                    <!-- Option 1: Use an image URL -->
-                    <!-- <img src="https://github.com/ALLENJ-q/Allen-Jeong/blob/1617ddbbe2ea99500a05fa07194573913acb90e0/009e55b4e7c23a9e314fae8152dd4e1c.jpg" alt="Text Enhancement Suite"> -->
-                    
-                    <!-- Option 2: Placeholder showing where to add image -->
-                    <div class="image-placeholder">
-                        <div class="image-placeholder-icon">📸</div>
-                        <div class="image-placeholder-text">
-                            Add your screenshot:<br>
-                            &lt;img src="your-image.jpg"&gt;
-                        </div>
-                    </div>
+                    <!-- First project screenshot -->
+                    <img src="/mnt/kimi/upload/009e55b4e7c23a9e314fae8152dd4e1c(1).jpg" alt="AI Text Enhancement Suite">
                     
                     <div class="project-image-overlay">
                         <div class="project-tech-stack">
@@ -1029,17 +987,12 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: Translation App -->
             <div class="project-card reveal">
                 <div class="project-image-container">
-                    <!-- REPLACE WITH YOUR PROJECT SCREENSHOT -->
-                    <div class="image-placeholder">
-                        <div class="image-placeholder-icon">📸</div>
-                        <div class="image-placeholder-text">
-                            Add your screenshot:<br>
-                            &lt;img src="your-image.jpg"&gt;
-                        </div>
-                    </div>
+                    <!-- Second project screenshot -->
+                    <img src="/mnt/kimi/upload/mit1.jpg" alt="AI Translation App">
+                    
                     <div class="project-image-overlay">
                         <div class="project-tech-stack">
                             <span class="tech-tag">React</span>
