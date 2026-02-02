@@ -1,24 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Allen Jeong - AI Engineer & NLP Enthusiast Portfolio">
-    <meta name="keywords" content="AI Engineer, NLP, Python, Machine Learning, Portfolio">
-    <meta name="author" content="Allen Jeong">
-    
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="Allen Jeong - AI Engineer Portfolio">
-    <meta property="og:description" content="Building AI-powered tools that simplify communication and language learning">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://allenjeong.github.io">
-    
     <title>Allen Jeong - AI Engineer Portfolio</title>
-    
-    <!-- Favicon (no external files needed) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    
     <style>
         /* CSS Variables for theming */
         :root {
@@ -46,7 +31,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
             color: var(--text);
             background-color: var(--bg);
@@ -450,7 +435,7 @@
             box-shadow: 0 30px 60px rgba(37, 99, 235, 0.15);
         }
 
-        /* Project Image Container */
+        /* Project Image Container - Ready for your images */
         .project-image-container {
             position: relative;
             height: 250px;
@@ -469,7 +454,7 @@
             transform: scale(1.1);
         }
 
-        /* Placeholder for projects without images */
+        /* Placeholder for when you don't have images yet */
         .image-placeholder {
             width: 100%;
             height: 100%;
@@ -488,7 +473,7 @@
             opacity: 0.5;
         }
 
-        /* Image overlay on hover */
+        /* Image upload hint overlay */
         .image-overlay {
             position: absolute;
             top: 0;
@@ -668,28 +653,6 @@
             font-size: 0.9rem;
         }
 
-        /* GitHub Corner */
-        .github-corner {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 80px;
-            height: 80px;
-            fill: var(--primary);
-            color: white;
-            z-index: 1001;
-        }
-
-        .github-corner:hover .octo-arm {
-            animation: octocat-wave 560ms ease-in-out;
-        }
-
-        @keyframes octocat-wave {
-            0%, 100% { transform: rotate(0); }
-            20%, 60% { transform: rotate(-25deg); }
-            40%, 80% { transform: rotate(10deg); }
-        }
-
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
@@ -713,33 +676,22 @@
             .section-title {
                 font-size: 2rem;
             }
-
-            .github-corner {
-                width: 60px;
-                height: 60px;
-            }
         }
 
-        /* Reduced motion preference */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
+        /* Loading Animation for images */
+        .image-skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
     </style>
 </head>
 <body>
-    <!-- GitHub Corner (links to your repo) -->
-    <a href="https://github.com/allenjeong" class="github-corner" aria-label="View source on GitHub">
-        <svg width="80" height="80" viewBox="0 0 250 250" style="position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-            <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-            <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
-        </svg>
-    </a>
-
     <!-- Header -->
     <header>
         <div class="header-content">
@@ -804,15 +756,13 @@
         <h2 class="section-title animate-on-scroll">Project Showcase</h2>
         <div class="projects-grid">
             
-            <!-- Project 1: Text Enhancement Suite -->
+            <!-- Project 1 -->
             <div class="project-card animate-on-scroll stagger-1">
                 <div class="project-image-container">
-                    <!-- 👇 REPLACE WITH YOUR PROJECT SCREENSHOT (optional but recommended) -->
-                    <!-- Upload image to your GitHub repo (e.g., create an /assets/images/ folder) -->
-                    <!-- Uncomment the line below and update the URL: -->
-                    <!-- <img src="https://raw.githubusercontent.com/allenjeong/allenjeong.github.io/main/assets/images/text-enhancement-suite.png" alt="Text Enhancement Suite Screenshot" loading="lazy"> -->
+                    <!-- Option 1: Add your image here -->
+                    <!-- <img src="path-to-your-image.jpg" alt="Text Enhancement Suite"> -->
                     
-                    <!-- Keep this placeholder if you don’t have an image yet -->
+                    <!-- Option 2: Placeholder (remove when you add real image) -->
                     <div class="image-placeholder">
                         <div class="image-placeholder-icon">📝</div>
                         <span>Text Enhancement Suite</span>
@@ -841,21 +791,19 @@
                     </div>
                     
                     <div class="project-links">
-                        <!-- 👇 UPDATE WITH YOUR ACTUAL GITHUB REPO URL -->
-                        <a href="https://github.com/allenjeong/text-enhancement-suite" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Code</a>
-                        <!-- 👇 ADD LIVE DEMO URL IF YOU HAVE ONE (e.g., Replit/Vercel) -->
-                        <a href="#" class="btn" disabled>Live Demo</a>
+                        <a href="https://github.com/allenjeong/text-enhancement-suite" class="btn btn-primary">GitHub Code</a>
+                        <a href="#" class="btn">Live Demo</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Project 2: AI Translation App -->
+            <!-- Project 2 -->
             <div class="project-card animate-on-scroll stagger-2">
                 <div class="project-image-container">
-                    <!-- 👇 REPLACE WITH YOUR PROJECT SCREENSHOT (optional but recommended) -->
-                    <!-- <img src="https://raw.githubusercontent.com/allenjeong/allenjeong.github.io/main/assets/images/ai-translation-app.png" alt="AI Translation App Screenshot" loading="lazy"> -->
+                    <!-- Option 1: Add your image here -->
+                    <!-- <img src="path-to-your-image.jpg" alt="AI Translation App"> -->
                     
-                    <!-- Keep this placeholder if you don’t have an image yet -->
+                    <!-- Option 2: Placeholder (remove when you add real image) -->
                     <div class="image-placeholder">
                         <div class="image-placeholder-icon">🌐</div>
                         <span>AI Translation App</span>
@@ -884,10 +832,8 @@
                     </div>
                     
                     <div class="project-links">
-                        <!-- 👇 UPDATE WITH YOUR ACTUAL GITHUB REPO URL -->
-                        <a href="https://github.com/allenjeong/ai-translation-app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">GitHub Code</a>
-                        <!-- 👇 ADD LIVE DEMO URL IF YOU HAVE ONE -->
-                        <a href="#" class="btn" disabled>Live Demo</a>
+                        <a href="https://github.com/allenjeong/ai-translation-app" class="btn btn-primary">GitHub Code</a>
+                        <a href="#" class="btn">Live Demo</a>
                     </div>
                 </div>
             </div>
@@ -906,12 +852,11 @@
                         <span class="contact-icon">📧</span>
                         <span>allen.jeong.ai@gmail.com</span>
                     </a>
-                    <a href="https://github.com/allenjeong" class="contact-item" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/allenjeong" class="contact-item">
                         <span class="contact-icon">💻</span>
                         <span>GitHub</span>
                     </a>
-                    <!-- 👇 UPDATE WITH YOUR ACTUAL LINKEDIN URL (if you have one) -->
-                    <a href="https://linkedin.com/in/allenjeong" class="contact-item" target="_blank" rel="noopener noreferrer">
+                    <a href="https://linkedin.com/in/allenjeong" class="contact-item">
                         <span class="contact-icon">🔗</span>
                         <span>LinkedIn</span>
                     </a>
@@ -925,7 +870,7 @@
         <p>&copy; 2024 Allen Jeong. Crafted with passion & code.</p>
     </footer>
 
-    <!-- JavaScript (no external dependencies) -->
+    <!-- JavaScript for Animations -->
     <script>
         // Intersection Observer for scroll animations
         const observerOptions = {
@@ -958,7 +903,7 @@
             });
         });
 
-        // Header shadow on scroll
+        // Header background on scroll
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -968,16 +913,14 @@
             }
         });
 
-        // Parallax effect for hero (disabled on mobile)
-        if (window.matchMedia('(pointer: fine)').matches) {
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                const hero = document.querySelector('.hero');
-                if (hero && scrolled < window.innerHeight) {
-                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-                }
-            });
-        }
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
     </script>
 </body>
 </html>
